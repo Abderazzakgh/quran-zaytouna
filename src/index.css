@@ -135,6 +135,251 @@
   body {
     @apply bg-background text-foreground font-cairo antialiased selection:bg-primary/20 selection:text-primary;
     direction: rtl;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Responsive Design Fixes */
+  html {
+    font-size: 16px;
+  }
+
+  /* Force mobile-friendly viewport settings */
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    html {
+      font-size: 12px;
+    }
+  }
+
+  /* Prevent horizontal scrolling */
+  *, *::before, *::after {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  /* Responsive container fixes */
+  .container {
+    @apply max-w-full px-4;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      @apply px-6;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      @apply px-8;
+    }
+  }
+
+  /* Fixed positioning fixes */
+  .fixed, .sticky, .absolute {
+    will-change: transform;
+  }
+
+  /* Better touch targets for mobile */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Disable zoom on double tap on iOS */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      touch-action: manipulation;
+    }
+  }
+
+  /* Better font rendering */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Fix for Safari overflow issues */
+  .overflow-hidden {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Responsive image handling */
+  img {
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  /* Better flexbox handling */
+  .flex, .inline-flex {
+    min-width: 0;
+  }
+
+  /* Grid fixes */
+  .grid {
+    min-width: 0;
+  }
+
+  /* Prevent layout shift */
+  .prevent-layout-shift {
+    contain: layout style paint;
+  }
+
+  /* Additional responsive fixes */
+  .max-w-screen {
+    max-width: 100vw;
+  }
+
+  .max-h-screen {
+    max-height: 100vh;
+  }
+
+  /* Responsive spacing */
+  .p-responsive {
+    @apply p-4 sm:p-6;
+  }
+
+  .px-responsive {
+    @apply px-4 sm:px-6;
+  }
+
+  .py-responsive {
+    @apply py-8 sm:py-12;
+  }
+
+  /* Fixed positioning responsive */
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+  }
+
+  .fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+  }
+
+  /* Better mobile touch targets */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 10px;
+  }
+
+  /* Responsive typography */
+  .text-responsive {
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+  }
+
+  .text-responsive-lg {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  /* Responsive image container */
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Prevent horizontal scroll */
+  .no-x-scroll {
+    overflow-x: hidden;
+  }
+
+  /* Responsive flexbox */
+  .flex-responsive {
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    .flex-responsive {
+      flex-direction: row;
+    }
+  }
+
+  /* Responsive grid */
+  .grid-responsive {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) {
+    .grid-responsive {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid-responsive {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* Responsive height */
+  .min-h-responsive {
+    min-height: calc(100vh - 6rem);
+  }
+
+  @media (max-width: 1023px) {
+    .min-h-responsive {
+      min-height: calc(100vh - 4rem);
+    }
+  }
+
+  /* Prevent text overflow */
+  .text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Sidebar scroll behavior */
+  .sidebar-scroll {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Custom scrollbar for sidebar */
+  .sidebar-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .sidebar-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sidebar-scroll::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.3);
+    border-radius: 3px;
+  }
+
+  .sidebar-scroll::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.5);
+  }
+
+  /* Responsive animations */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 
   h1,

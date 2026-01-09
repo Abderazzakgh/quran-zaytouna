@@ -65,62 +65,62 @@ const Header = ({ onMenuClick }: HeaderProps) => {
   };
 
   return (
-    <header className="sticky top-0 z-50 glass-card border-b border-white/10 shadow-premium backdrop-blur-md">
-      <div className="container mx-auto px-4 lg:px-8 py-3 lg:py-5">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-6">
+    <header className="sticky top-0 z-50 glass-card border-b border-white/10 shadow-premium backdrop-blur-md w-full">
+      <div className="container mx-auto px-4 py-3">
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3 sm:gap-6">
             <Button
               variant="ghost"
               size="icon"
-              className="lg:hidden hover:bg-primary/10 transition-colors"
+              className="lg:hidden hover:bg-primary/10 transition-colors touch-target"
               onClick={onMenuClick}
             >
-              <Menu className="h-6 w-6 text-foreground/80" />
+              <Menu className="h-5 w-5 sm:h-6 sm:w-6 text-foreground/80" />
             </Button>
 
-            <div className="flex items-center gap-4 group cursor-pointer">
+            <div className="flex items-center gap-2 sm:gap-4 group cursor-pointer">
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <img
                   src={zaytounaEmblem}
                   alt="مصحف الزيتونة"
-                  className="w-14 h-14 lg:w-16 lg:h-16 object-contain drop-shadow-md group-hover:scale-105 group-hover:rotate-3 transition-transform duration-500"
+                  className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 object-contain drop-shadow-md group-hover:scale-105 group-hover:rotate-3 transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col">
-                <h1 className="text-2xl lg:text-3xl font-bold text-gradient-primary tracking-tight">
+                <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-gradient-primary tracking-tight">
                   مصحف الزيتونة
                 </h1>
-                <div className="flex items-center gap-2 mt-0.5">
-                  <Badge variant="outline" className="text-[10px] uppercase tracking-widest border-primary/20 bg-primary/5 text-primary font-semibold px-2">
+                <div className="flex items-center gap-1 sm:gap-2 mt-0.5">
+                  <Badge variant="outline" className="text-[8px] sm:text-[10px] uppercase tracking-widest border-primary/20 bg-primary/5 text-primary font-semibold px-1.5 sm:px-2">
                     رواية قالون
                   </Badge>
-                  <span className="text-[10px] text-muted-foreground/60 hidden lg:inline">الرقمية للقرآن الكريم</span>
+                  <span className="text-[8px] sm:text-[10px] text-muted-foreground/60 hidden sm:inline">الرقمية للقرآن الكريم</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
-            <div className="hidden md:block">
+          <div className="flex items-center gap-2 sm:gap-4">
+            <div className="hidden md:block flex-1 max-w-xs">
               <QuranSearch />
             </div>
 
-            <div className="flex items-center gap-1.5 bg-muted/40 p-1.5 rounded-2xl border border-border/40">
-              <Button variant="ghost" size="icon" onClick={toggleTheme} className="w-9 h-9 rounded-xl hover:bg-background shadow-none transition-all duration-300">
-                {isDark ? <Sun className="h-[18px] w-[18px] text-yellow-500" /> : <Moon className="h-[18px] w-[18px] text-slate-700" />}
+            <div className="flex items-center gap-1 bg-muted/40 p-1 rounded-xl border border-border/40">
+              <Button variant="ghost" size="icon" onClick={toggleTheme} className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl hover:bg-background shadow-none transition-all duration-300 touch-target">
+                {isDark ? <Sun className="h-[16px] sm:h-[18px] w-[16px] sm:w-[18px] text-yellow-500" /> : <Moon className="h-[16px] sm:h-[18px] w-[16px] sm:w-[18px] text-slate-700" />}
               </Button>
 
-              <div className="w-[1px] h-5 bg-border/50 mx-1" />
+              <div className="w-0.5 sm:w-[1px] h-4 sm:h-5 bg-border/50 mx-0.5 sm:mx-1" />
 
               {user ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" size="icon" className="w-9 h-9 rounded-xl hover:bg-background shadow-none transition-all duration-300">
-                      <User className="h-[18px] w-[18px] text-primary" />
+                    <Button variant="ghost" size="icon" className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl hover:bg-background shadow-none transition-all duration-300 touch-target">
+                      <User className="h-[16px] sm:h-[18px] w-[16px] sm:w-[18px] text-primary" />
                     </Button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="w-56 glass-card border-border/50 mt-2 p-2">
+                  <DropdownMenuContent align="end" className="w-48 sm:w-56 glass-card border-border/50 mt-2 p-2">
                     <div className="px-3 py-2 border-b border-border/30 mb-2">
                       <p className="text-xs text-muted-foreground">مرحباً بك</p>
                       <p className="text-sm font-semibold truncate">{profile?.full_name || profile?.username || user.email}</p>
@@ -142,7 +142,7 @@ const Header = ({ onMenuClick }: HeaderProps) => {
 
             <Button
               variant="default"
-              className="button-premium hidden sm:flex h-11 px-6 font-semibold"
+              className="button-premium hidden sm:flex h-9 sm:h-11 px-4 sm:px-6 font-semibold text-sm sm:text-base"
               onClick={() => {
                 const element = document.getElementById('ai-assistant');
                 if (element) {
@@ -150,8 +150,9 @@ const Header = ({ onMenuClick }: HeaderProps) => {
                 }
               }}
             >
-              <Sparkles className="h-4 w-4 ml-2" />
-              المساعد الذكي
+              <Sparkles className="h-3 sm:h-4 w-3 sm:w-4 ml-1 sm:ml-2" />
+              <span className="hidden md:inline">المساعد الذكي</span>
+              <span className="md:hidden">AI</span>
             </Button>
           </div>
         </div>
