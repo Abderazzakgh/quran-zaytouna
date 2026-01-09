@@ -1,0 +1,22 @@
+{
+    "name": "مصحف الزيتونة - رواية قالون",
+    "short_name": "مصحف الزيتونة",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#059669",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/zaytouna-emblem.svg",
+            "sizes": "192x192 512x512",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/src/assets/zaytuna-logo.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
+}

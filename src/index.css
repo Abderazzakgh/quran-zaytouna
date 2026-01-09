@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Premium Islamic Color Palette - Light Mode */
+    --background: 45 30% 98%;
+    --foreground: 210 25% 12%;
+
+    /* Sophisticated Card Surfaces */
+    --card: 45 40% 99%;
+    --card-foreground: 210 25% 15%;
+    --card-border: 45 20% 90%;
+
+    /* Popovers & Modals */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 25% 12%;
+
+    /* Core Identity - Zaytouni Green & Gold */
+    --primary: 142 55% 32%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 142 60% 45%;
+
+    --secondary: 42 65% 92%;
+    --secondary-foreground: 210 20% 20%;
+
+    /* Muted states */
+    --muted: 45 20% 94%;
+    --muted-foreground: 210 10% 45%;
+
+    /* Accent - Noble Gold */
+    --accent: 42 85% 65%;
+    --accent-foreground: 210 25% 12%;
+
+    /* Utility Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 45 20% 88%;
+    --input: 45 15% 93%;
+    --ring: 142 55% 32%;
+
+    --radius: 16px;
+
+    /* Professional Gradients */
+    --gradient-islamic: linear-gradient(135deg, hsl(142, 55%, 32%), hsl(142, 45%, 42%));
+    --gradient-gold: linear-gradient(135deg, hsl(42, 85%, 65%), hsl(38, 75%, 55%));
+    --gradient-surface: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(142, 55%, 32%) 0%, hsl(42, 85%, 65%) 100%);
+
+    /* Depth & Shadows */
+    --shadow-premium: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    --shadow-gold-glow: 0 0 25px rgba(212, 175, 55, 0.2);
+    --shadow-glow: 0 0 30px hsl(142, 60%, 45%, 0.2);
+
+    /* Sidebar Variables */
+    --sidebar-background: 142 45% 97%;
+    --sidebar-foreground: 210 20% 20%;
+    --sidebar-primary: 142 55% 32%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 42 50% 92%;
+    --sidebar-accent-foreground: 142 55% 32%;
+    --sidebar-border: 45 15% 90%;
+    --sidebar-ring: 142 55% 32%;
+  }
+
+  .dark {
+    /* Luxury Dark Mode - Midnight Emerald */
+    --background: 215 35% 6%;
+    --foreground: 45 20% 94%;
+
+    --card: 215 30% 9%;
+    --card-foreground: 45 20% 92%;
+    --card-border: 215 20% 15%;
+
+    --popover: 215 35% 8%;
+    --popover-foreground: 45 20% 94%;
+
+    --primary: 142 50% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 142 55% 55%;
+
+    --secondary: 215 25% 14%;
+    --secondary-foreground: 45 20% 90%;
+
+    --muted: 215 25% 12%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 42 70% 50%;
+    --accent-foreground: 215 35% 6%;
+
+    --border: 215 20% 18%;
+    --input: 215 20% 15%;
+    --ring: 142 50% 45%;
+
+    --sidebar-background: 215 40% 5%;
+    --sidebar-foreground: 45 20% 90%;
+    --sidebar-primary: 142 50% 45%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 25% 12%;
+    --sidebar-accent-foreground: 142 50% 45%;
+    --sidebar-border: 215 20% 18%;
+    --sidebar-ring: 142 50% 45%;
+  }
+}
+
+@layer utilities {
+  .shadow-premium {
+    box-shadow: var(--shadow-premium);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-gold-glow {
+    box-shadow: var(--shadow-gold-glow);
+  }
+
+  .bg-islamic-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.878 18.09h19.022l-15.39 11.18 5.878 18.09-15.388-11.18-15.39 11.18 5.878-18.09-15.39-11.18h19.022z' fill='%2322543d' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-cairo antialiased selection:bg-primary/20 selection:text-primary;
+    direction: rtl;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-cairo tracking-tight;
+  }
+
+  /* Quranic Typography */
+  .quran-text {
+    @apply font-amiri text-right leading-[2.2] tracking-wide;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+  }
+
+  /* Utility Classes for Professional UI */
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-premium;
+  }
+
+  .premium-card {
+    @apply transition-all duration-500 hover:shadow-2xl hover:scale-[1.01] hover:-translate-y-1 relative overflow-hidden;
+    background: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted) / 0.5));
+  }
+
+  .premium-card::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none;
+    background: radial-gradient(circle at center, hsl(var(--primary) / 0.05), transparent);
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-islamic bg-clip-text text-transparent;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-gold bg-clip-text text-transparent;
+  }
+
+  /* Interactive Elements */
+  .button-premium {
+    @apply relative overflow-hidden transition-all duration-300 active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+    background: var(--gradient-islamic);
+    box-shadow: 0 4px 15px hsl(var(--primary) / 0.2);
+  }
+
+  .button-premium::after {
+    content: '';
+    @apply absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: skewX(-20deg);
+  }
+
+  /* Islamic Flourishes */
+  .islamic-glow {
+    @apply relative;
+  }
+
+  .islamic-glow::after {
+    content: '';
+    @apply absolute inset-[-4px] rounded-full opacity-10 blur-xl transition-all duration-500 z-[-1];
+    background: var(--gradient-premium);
+  }
+
+  .islamic-glow:hover::after {
+    @apply opacity-30 blur-2xl;
+  }
+
+  /* Decorative Patterns */
+  .bg-islamic-pattern {
+    @apply opacity-20 dark:opacity-5 pointer-events-none;
+  }
+
+  /* Micro-interactions */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-glow;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
+  }
+
+  /* Animatio Framework */
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes float-soft {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float-soft {
+    animation: float-soft 6s ease-in-out infinite;
+  }
+
+  @keyframes voice-bar {
+
+    0%,
+    100% {
+      height: 4px;
+      opacity: 0.3;
+    }
+
+    50% {
+      height: 24px;
+      opacity: 1;
+    }
+  }
+
+  .animate-voice-bar {
+    animation: voice-bar 0.8s ease-in-out infinite;
+  }
+}

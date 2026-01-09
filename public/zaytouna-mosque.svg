@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <!-- Beautiful parchment background with subtle texture -->
+  <defs>
+    <linearGradient id="parchmentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5E9D2;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#F2E1C1;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#EEDDB8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6D2A8;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="lightGradient" cx="50%" cy="50%" r="100%" fx="30%" fy="30%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.05" />
+    </radialGradient>
+    
+    <pattern id="parchmentTexture" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="url(#parchmentGradient)" opacity="0.8" />
+      <path d="M0,0 Q25,10 50,0 Q75,15 100,0 L100,100 Q75,90 50,100 Q25,85 0,100 Z" fill="none" stroke="#D4C1A0" stroke-width="0.5" opacity="0.3" />
+    </pattern>
+  </defs>
+  
+  <!-- Parchment background with subtle texture -->
+  <rect width="1920" height="1080" fill="url(#parchmentGradient)" />
+  <rect width="1920" height="1080" fill="url(#parchmentTexture)" />
+  
+  <!-- Page borders with Islamic patterns -->
+  <g stroke="#D4AF37" stroke-width="3" fill="none">
+    <rect x="100" y="100" width="1720" height="880" rx="20" ry="20" stroke-width="4" />
+    <rect x="120" y="120" width="1680" height="840" rx="15" ry="15" stroke-width="2" opacity="0.5" />
+  </g>
+  
+  <!-- Beautiful Quran page design elements -->
+  <g transform="translate(960, 540)">
+    <!-- Decorative top border with Islamic patterns -->
+    <g transform="translate(0, -400)">
+      <path d="M-700,0 Q-650,-30 -600,0 Q-550,30 -500,0 Q-450,-30 -400,0 Q-350,30 -300,0 Q-250,-30 -200,0 Q-150,30 -100,0 Q-50,-30 0,0 Q50,30 100,0 Q150,-30 200,0 Q250,30 300,0 Q350,-30 400,0 Q450,30 500,0 Q550,-30 600,0 Q650,30 700,0" stroke="#D4AF37" stroke-width="2" fill="none" />
+      
+      <!-- Decorative elements along the top border -->
+      <g fill="#D4AF37">
+        <circle cx="-650" cy="-20" r="8" />
+        <circle cx="-550" cy="-15" r="6" />
+        <circle cx="-450" cy="-25" r="7" />
+        <circle cx="-350" cy="-10" r="5" />
+        <circle cx="-250" cy="-20" r="7" />
+        <circle cx="-150" cy="-15" r="6" />
+        <circle cx="-50" cy="-25" r="8" />
+        <circle cx="50" cy="-25" r="8" />
+        <circle cx="150" cy="-15" r="6" />
+        <circle cx="250" cy="-20" r="7" />
+        <circle cx="350" cy="-10" r="5" />
+        <circle cx="450" cy="-25" r="7" />
+        <circle cx="550" cy="-15" r="6" />
+        <circle cx="650" cy="-20" r="8" />
+      </g>
+      
+      <!-- Central decorative element -->
+      <g transform="translate(0, -40)">
+        <circle cx="0" cy="0" r="30" stroke="#D4AF37" stroke-width="2" fill="none" />
+        <circle cx="0" cy="0" r="20" stroke="#D4AF37" stroke-width="1" fill="none" />
+        <circle cx="0" cy="0" r="10" stroke="#D4AF37" stroke-width="1" fill="none" />
+        
+        <!-- 8-pointed star pattern -->
+        <polygon points="0,-25 -5,-15 -15,-5 -25,0 -15,5 -5,15 0,25 5,15 15,5 25,0 15,-5 5,-15" stroke="#D4AF37" stroke-width="1" fill="none" />
+        
+        <!-- Crescent and star -->
+        <g fill="#D4AF37">
+          <path d="M0,-10 A15,15 0 1,1 0,10 A12,12 0 1,0 0,-10 Z" />
+          <polygon points="0,-15 2,-8 9,-8 4,-3 6,4 0,0 -6,4 -4,-3 -9,-8 -2,-8" />
+        </g>
+      </g>
+    </g>
+    
+    <!-- Decorative bottom border with Islamic patterns -->
+    <g transform="translate(0, 400)">
+      <path d="M-700,0 Q-650,30 -600,0 Q-550,-30 -500,0 Q-450,30 -400,0 Q-350,-30 -300,0 Q-250,30 -200,0 Q-150,-30 -100,0 Q-50,30 0,0 Q50,-30 100,0 Q150,30 200,0 Q250,-30 300,0 Q350,30 400,0 Q450,-30 500,0 Q550,30 600,0 Q650,-30 700,0" stroke="#D4AF37" stroke-width="2" fill="none" />
+      
+      <!-- Decorative elements along the bottom border -->
+      <g fill="#D4AF37">
+        <circle cx="-650" cy="20" r="8" />
+        <circle cx="-550" cy="15" r="6" />
+        <circle cx="-450" cy="25" r="7" />
+        <circle cx="-350" cy="10" r="5" />
+        <circle cx="-250" cy="20" r="7" />
+        <circle cx="-150" cy="15" r="6" />
+        <circle cx="-50" cy="25" r="8" />
+        <circle cx="50" cy="25" r="8" />
+        <circle cx="150" cy="15" r="6" />
+        <circle cx="250" cy="20" r="7" />
+        <circle cx="350" cy="10" r="5" />
+        <circle cx="450" cy="25" r="7" />
+        <circle cx="550" cy="15" r="6" />
+        <circle cx="650" cy="20" r="8" />
+      </g>
+      
+      <!-- Central decorative element -->
+      <g transform="translate(0, 40)">
+        <circle cx="0" cy="0" r="30" stroke="#D4AF37" stroke-width="2" fill="none" />
+        <circle cx="0" cy="0" r="20" stroke="#D4AF37" stroke-width="1" fill="none" />
+        <circle cx="0" cy="0" r="10" stroke="#D4AF37" stroke-width="1" fill="none" />
+        
+        <!-- 8-pointed star pattern -->
+        <polygon points="0,-25 -5,-15 -15,-5 -25,0 -15,5 -5,15 0,25 5,15 15,5 25,0 15,-5 5,-15" stroke="#D4AF37" stroke-width="1" fill="none" />
+        
+        <!-- Crescent and star -->
+        <g fill="#D4AF37">
+          <path d="M0,-10 A15,15 0 1,1 0,10 A12,12 0 1,0 0,-10 Z" />
+          <polygon points="0,-15 2,-8 9,-8 4,-3 6,4 0,0 -6,4 -4,-3 -9,-8 -2,-8" />
+        </g>
+      </g>
+    </g>
+    
+    <!-- Beautiful Quranic text placeholders (stylized) -->
+    <g fill="#2C3E50" opacity="0.9">
+      <!-- Top line of text -->
+      <g transform="translate(0, -300)">
+        <path d="M-300,0 Q-280,-10 -260,0 Q-240,10 -220,0 Q-200,-10 -180,0 Q-160,10 -140,0 Q-120,-10 -100,0 Q-80,10 -60,0 Q-40,-10 -20,0 Q0,10 20,0 Q40,-10 60,0 Q80,10 100,0 Q120,-10 140,0 Q160,10 180,0 Q200,-10 220,0 Q240,10 260,0 Q280,-10 300,0" stroke="#2C3E50" stroke-width="3" fill="none" />
+      </g>
+      
+      <!-- Middle line of text -->
+      <g transform="translate(0, -250)">
+        <path d="M-400,0 Q-370,-15 -340,0 Q-310,15 -280,0 Q-250,-15 -220,0 Q-190,15 -160,0 Q-130,-15 -100,0 Q-70,15 -40,0 Q-10,-15 20,0 Q50,15 80,0 Q110,-15 140,0 Q170,15 200,0 Q230,-15 260,0 Q290,15 320,0 Q350,-15 380,0" stroke="#2C3E50" stroke-width="4" fill="none" />
+      </g>
+      
+      <!-- Bottom line of text -->
+      <g transform="translate(0, -200)">
+        <path d="M-350,0 Q-320,-10 -290,0 Q-260,10 -230,0 Q-200,-10 -170,0 Q-140,10 -110,0 Q-80,-10 -50,0 Q-20,10 10,0 Q40,-10 70,0 Q100,10 130,0 Q160,-10 190,0 Q220,10 250,0 Q280,-10 310,0 Q340,10 370,0" stroke="#2C3E50" stroke-width="3" fill="none" />
+      </g>
+      
+      <!-- More text lines -->
+      <g transform="translate(0, -150)">
+        <path d="M-420,0 Q-390,-12 -360,0 Q-330,12 -300,0 Q-270,-12 -240,0 Q-210,12 -180,0 Q-150,-12 -120,0 Q-90,12 -60,0 Q-30,-12 0,0 Q30,12 60,0 Q90,-12 120,0 Q150,12 180,0 Q210,-12 240,0 Q270,12 300,0 Q330,-12 360,0 Q390,12 420,0" stroke="#2C3E50" stroke-width="3" fill="none" />
+      </g>
+      
+      <g transform="translate(0, -100)">
+        <path d="M-380,0 Q-350,-8 -320,0 Q-290,8 -260,0 Q-230,-8 -200,0 Q-170,8 -140,0 Q-110,-8 -80,0 Q-50,8 -20,0 Q10,-8 40,0 Q70,8 100,0 Q130,-8 160,0 Q190,8 220,0 Q250,-8 280,0 Q310,8 340,0 Q370,-8 400,0" stroke="#2C3E50" stroke-width="3" fill="none" />
+      </g>
+      
+      <g transform="translate(0, -50)">
+        <path d="M-400,0 Q-370,-10 -340,0 Q-310,10 -280,0 Q-250,-10 -220,0 Q-190,10 -160,0 Q-130,-10 -100,0 Q-70,10 -40,0 Q-10,-10 20,0 Q50,10 80,0 Q110,-10 140,0 Q170,10 200,0 Q230,-10 260,0 Q290,10 320,0 Q350,-10 380,0" stroke="#2C3E50" stroke-width="3" fill="none" />
+      </g>
+      
+      <g transform="translate(0, 0)">
+        <path d="M-360,0 Q-330,-12 -300,0 Q-270,12 -240,0 Q-210,-12 -180,0 Q-150,12 -120,0 Q-90,-12 -60,0 Q-30,12 0,0 Q30,-12 60,0 Q90,12 120,0 Q150,-12 180,0 Q210,12 240,0 Q270,-12 300,0 Q330,12 360,0" stroke="#2C3E50" stroke-width="3" fill="none" />
+      </g>
+      
+      <g transform="translate(0, 50)">
+        <path d="M-390,0 Q-360,-9 -330,0 Q-300,9 -270,0 Q-240,-9 -210,0 Q-180,9 -150,0 Q-120,-9 -90,0 Q-60,9 -30,0 Q0,-9 30,0 Q60,9 90,0 Q120,-9 150,0 Q180,9 210,0 Q240,-9 270,0 Q300,9 330,0 Q360,-9 390,0" stroke="#2C3E50" stroke-width="3" fill="none" />
+      </g>
+      
+      <g transform="translate(0, 100)">
+        <path d="M-370,0 Q-340,-11 -310,0 Q-280,11 -250,0 Q-220,-11 -190,0 Q-160,11 -130,0 Q-100,-11 -70,0 Q-40,11 -10,0 Q20,-11 50,0 Q80,11 110,0 Q140,-11 170,0 Q200,11 230,0 Q260,-11 290,0 Q320,11 350,0 Q380,-11 410,0" stroke="#2C3E50" stroke-width="3" fill="none" />
+      </g>
+      
+      <g transform="translate(0, 150)">
+        <path d="M-410,0 Q-380,-13 -350,0 Q-320,13 -290,0 Q-260,-13 -230,0 Q-200,13 -170,0 Q-140,-13 -110,0 Q-80,13 -50,0 Q-20,-13 10,0 Q40,13 70,0 Q100,-13 130,0 Q160,13 190,0 Q220,-13 250,0 Q280,13 310,0 Q340,-13 370,0 Q400,13 430,0" stroke="#2C3E50" stroke-width="3" fill="none" />
+      </g>
+    </g>
+    
+    <!-- Decorative side elements -->
+    <g fill="#D4AF37" opacity="0.8">
+      <!-- Left side decorations -->
+      <g transform="translate(-750, 0)">
+        <circle cx="0" cy="-300" r="12" />
+        <circle cx="0" cy="-200" r="10" />
+        <circle cx="0" cy="-100" r="12" />
+        <circle cx="0" cy="0" r="10" />
+        <circle cx="0" cy="100" r="12" />
+        <circle cx="0" cy="200" r="10" />
+        <circle cx="0" cy="300" r="12" />
+        
+        <!-- Decorative patterns -->
+        <path d="M0,-250 Q-20,-240 0,-230 Q20,-240 0,-250 Z" />
+        <path d="M0,-150 Q-20,-140 0,-130 Q20,-140 0,-150 Z" />
+        <path d="M0,-50 Q-20,-40 0,-30 Q20,-40 0,-50 Z" />
+        <path d="M0,50 Q-20,60 0,70 Q20,60 0,50 Z" />
+        <path d="M0,150 Q-20,160 0,170 Q20,160 0,150 Z" />
+        <path d="M0,250 Q-20,260 0,270 Q20,260 0,250 Z" />
+      </g>
+      
+      <!-- Right side decorations -->
+      <g transform="translate(750, 0)">
+        <circle cx="0" cy="-300" r="12" />
+        <circle cx="0" cy="-200" r="10" />
+        <circle cx="0" cy="-100" r="12" />
+        <circle cx="0" cy="0" r="10" />
+        <circle cx="0" cy="100" r="12" />
+        <circle cx="0" cy="200" r="10" />
+        <circle cx="0" cy="300" r="12" />
+        
+        <!-- Decorative patterns -->
+        <path d="M0,-250 Q-20,-240 0,-230 Q20,-240 0,-250 Z" />
+        <path d="M0,-150 Q-20,-140 0,-130 Q20,-140 0,-150 Z" />
+        <path d="M0,-50 Q-20,-40 0,-30 Q20,-40 0,-50 Z" />
+        <path d="M0,50 Q-20,60 0,70 Q20,60 0,50 Z" />
+        <path d="M0,150 Q-20,160 0,170 Q20,160 0,150 Z" />
+        <path d="M0,250 Q-20,260 0,270 Q20,260 0,250 Z" />
+      </g>
+    </g>
+    
+    <!-- Beautiful ornamental elements -->
+    <g fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.7">
+      <!-- Central ornamental pattern -->
+      <g transform="translate(0, -100)">
+        <circle cx="0" cy="0" r="80" stroke-width="1.5" />
+        <circle cx="0" cy="0" r="60" stroke-width="1" />
+        <circle cx="0" cy="0" r="40" stroke-width="1" />
+        <circle cx="0" cy="0" r="20" stroke-width="1" />
+        
+        <!-- Star pattern inside -->
+        <polygon points="0,-75 -15,-45 -45,-15 -75,0 -45,15 -15,45 0,75 15,45 45,15 75,0 45,-15 15,-45" stroke="#D4AF37" stroke-width="1" fill="none" />
+      </g>
+      
+      <!-- Corner ornamental elements -->
+      <g transform="translate(-650, -350)">
+        <path d="M0,0 Q20,-20 40,0 Q60,20 80,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+        <path d="M0,0 Q-20,-20 -40,0 Q-60,20 -80,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+        <path d="M0,0 Q20,20 0,40 Q-20,20 0,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+      </g>
+      
+      <g transform="translate(650, -350)">
+        <path d="M0,0 Q-20,-20 -40,0 Q-60,20 -80,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+        <path d="M0,0 Q20,-20 40,0 Q60,20 80,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+        <path d="M0,0 Q-20,20 0,40 Q20,20 0,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+      </g>
+      
+      <g transform="translate(-650, 350)">
+        <path d="M0,0 Q20,20 40,0 Q60,-20 80,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+        <path d="M0,0 Q-20,20 -40,0 Q-60,-20 -80,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+        <path d="M0,0 Q20,-20 0,-40 Q-20,-20 0,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+      </g>
+      
+      <g transform="translate(650, 350)">
+        <path d="M0,0 Q-20,20 -40,0 Q-60,-20 -80,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+        <path d="M0,0 Q20,20 40,0 Q60,-20 80,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+        <path d="M0,0 Q-20,-20 0,-40 Q20,-20 0,0" stroke="#D4AF37" stroke-width="1.5" fill="none" />
+      </g>
+    </g>
+  </g>
+  
+  <!-- Subtle glow effects -->
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+    <feBlend in="SourceGraphic" in2="blur" mode="screen" />
+  </filter>
+</svg>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/src/assets/zaytuna-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مصحف الزيتونة - رواية قالون عن نافع | جامع الزيتونة تونس</title>
+    <meta name="description" content="مصحف الزيتونة - المصحف الذكي الأول برواية قالون عن نافع مع قراء تونس وتعليم التجويد بالذكاء الاصطناعي" />
+    <meta name="author" content="مصحف الزيتونة - جامع الزيتونة تونس" />
+    <meta name="keywords" content="قرآن, مصحف, قالون, نافع, تونس, الزيتونة, تلاوة, حفظ, تجويد, رواية قالون, قراء تونس, ذكاء اصطناعي" />
+
+    <meta property="og:title" content="مصحف الزيتونة - رواية قالون عن نافع" />
+    <meta property="og:description" content="المصحف الذكي الأول برواية قالون مع قراء تونس وتعليم التجويد بالذكاء الاصطناعي" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta id="manifest-placeholder" />
+    <link rel="manifest" href="/manifest.json">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
