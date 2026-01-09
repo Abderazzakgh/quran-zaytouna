@@ -130,7 +130,7 @@ const Index = () => {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>رواية قالون عن نافع</li>
                       <li>الرقمية للقرآن الكريم</li>
-                      <li>تونس - 734هـ / 1445هـ</li>
+                      <li>تونس - 734هـ / 1447هـ</li>
                     </ul>
                   </div>
                 </div>
@@ -138,11 +138,11 @@ const Index = () => {
                 <div className="pt-6 sm:pt-8 border-t border-border/50 mt-8 sm:mt-12">
                   <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
                     <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-4">
-                      <span>© 2024 مصحف الزيتونة</span>
+                      <span>© 2026 مصحف الزيتونة</span>
                       <span className="hidden sm:inline">•</span>
                       <span>وقف لله تعالى</span>
                       <span className="hidden sm:inline">•</span>
-                      <span>صنع بـ ❤️ للمسلمين</span>
+                      <span>صنع  ❤️ للمسلمين</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-xs sm:text-sm">برواية قالون عن نافع المدني</span>
